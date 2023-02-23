@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <link rel="stylesheet" href="style.css">
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css" rel="stylesheet">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js"></script>
+    <title>LJU</title>
+    <!-- <script src="script.js"></script> -->
+    <script>
+        function login(){
+            // a = document.querySelector('#email').
+            console.log('in login')
+            var formElements = document.forms['myform'].elements['email'].value;
+            // b = document.querySelector('#pswd').value
+            console.log(formElements)
+            // console.log(b)
+        }
+    </script>
+</head>
+<body >
+    <div id="user"  >
+        Guest
+    </div>
+    <div  id="login-img" >
+        <img src="/images/logo.png" alt="sorry" width="250" class="float-start img-fluid">
+        <div id="login-img-div"><h6>LOK JAGRUTI UNIVERSITY LMS</h6></div>
+    </div>
+    <!-- <h4 >Login</h4> -->
+    <div id="log" style="text-align:center" class="p-5">
+        <form method="post" action="#" id="myform">
+            <fieldset class="border border-dark bordered-rounded p-2" id="fs" style="width: 50%;height:21rem;">
+                <legend class="float-none w-auto">Log In</legend>
+                <br>
+                <div class="form-group row">
+                    <div class="col-4">
+                    <label  for="email" class="form-label sr-only "><span style="font-size:1.1em">Email</span> </label>
+                    </div>
+                    <div class="col-8">
+                    <input class="form-control" id="email" type="email" name="email" value placeholder="Enter email id"/> 
+                    </div>
+                </div>
+                <div class="form-group row">
+                    <div class="col-4">
+                        <label class=" sr-only" for="pswd"> <span style="font-size:1.1em">Password</span> </label>
+                    </div>
+                    <div class="col-8">
+                    <input class="form-control" type="password" name="pswd" id="pswd" value placeholder="Enter password"/> 
+                    </div>
+                </div>
+                <input type="submit" value="login" onsubmit="return login()" ></input>
+                <div>
+                <a href="#" style="font-size: 80%; text-decoration: none;" >Forget Password</a></div>
+                
+
+            </fieldset>
+        </form>
+    </div>
+    <div class="footer">
+        <div class="row">
+            <div class="col sm-4">
+                <span><b> Engineering School</b></span>
+                <div>
+                    Yagna:yagnapatel2108@gmail.com
+
+                </div>
+            </div>
+            <div class="col sm-4">
+                <span> <b> Management School</b></span>
+                <div>
+                    Yagna:yagnapatel2108@gmail.com
+                </div>
+            </div>
+            <div class="col sm-4">
+                <span> <b>Law School</b></span>
+                <div>
+                    Yagna:yagnapatel2108@gmail.com
+                </div>
+            </div>
+        </div>
+        <a href="https://www.facebook.com" target="_blank" style="margin-left: 10px;"><img src="/images/facebook.png" alt=""
+                width="1.5%"></img></a>
+        <a href="https://www.youtube.com" target="_blank" style="margin-left: 10px;"><img src="/images/youtube.png" alt=""
+                width="1.5%"></img></a>
+        <a href="https://www.twitter.com" target="_blank" style="margin-left: 10px;"><img src="/images/twitter.png" alt=""
+                width="1.5%"></img></a>
+        <a href="https://www.instagram.com" target="_blank" style="margin-left: 10px;"><img src="/images/insta.png" alt=""
+                width="1.5%"></img></a>
+        <br>
+        <br>
+    </div>
+    </div>
+    </div>
+    <div class="footer2">
+
+        <div class="container p-2">&copy;2013-2023 LJ University &reg;All Rights Reserved</div>
+    </div>
+</body>
+</html>
