@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Document</title>
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css" rel="stylesheet">
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js"></script>
+        <!-- <link rel="stylesheet" href="style1.css"> -->
+        <!-- <script src="script1.js"></script> -->
+
+        <script>
+            function fun(){
+                p=document.getElementById("pass").value;
+                u=document.getElementById("uname").value;
+                m=document.getElementById("mob").value;
+                e=document.getElementById("em").value;
+                pat=/\W+/;
+                pat_u=/[^_]*^[A-z]+$/;
+                pat_m=/^\d{10}$/;
+                pat_e=/^\W+([\.]?\W+)*@\W+([\._]?\W)*(\.\w{2,3})$/
+                if(p.length>=6 && p.length<=12){
+                    if(!pat.test(p)){
+                        alert("Password must contain special chars");
+                    }
+                }
+                else{
+                    alert("Length must be greater than 6 and less than 12 characaters");
+                }
+                if(!pat_u.test(u)){
+                    alert("Username wrong");
+                }
+                if(!pat_m.test(m)){
+                    alert("Mobile No wrong");
+                }
+                if(pat_e.test(e)){
+                    alert("Email wrong");
+                }
+            }
+        </script>
+    </head>
+    <body>
+        <form>
+            <input type="password" id="pass"/>
+            <br>
+            <input type="text" id="uname" placeholder="enter your username"/>
+            <br>
+            <input type="number" id="mob" placeholder="enter your mobile number"/>
+            <br>
+            <input type="email" id="em" placeholder="enter your email"/>
+            <br>
+            <input type="button" value="click me" onclick="fun()"/>
+        </form>
+    </body>
+</html>
