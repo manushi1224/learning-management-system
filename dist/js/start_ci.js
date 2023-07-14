@@ -4,5 +4,5 @@ function submitForm(e) {
   
     sessionStorage.setItem("name", name);
   
-    location.href = "/public/html/quiz1_ci.html";
+    location.href = "https://manushi1224.github.io/learning-management-system/public/html/quiz1_ci.html";
   }

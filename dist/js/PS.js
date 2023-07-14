@@ -72,7 +72,7 @@ function next() {
   if (question_count == questions.length - 1) {
     sessionStorage.setItem("time", time);
     clearInterval(mytime);
-    location.href = "/public/html/end.html";
+    location.href = "https://manushi1224.github.io/learning-management-system/public/html/end.html";
   }
   console.log(question_count);
 
